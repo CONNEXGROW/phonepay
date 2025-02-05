@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirect to Payment Link</title>
+</head>
+<body>
+  <h1>Pay 5 Rupees</h1>
+  <form id="paymentForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <button type="submit">Pay Now</button>
+  </form>
+
+  <script>
+    document.getElementById('paymentForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Redirect to the payment link
+      window.location.href = 'https://phon.pe/vl4autyq';
+    });
+  </script>
+</body>
+</html>
